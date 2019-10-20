@@ -4,6 +4,15 @@
 # or whitespace (' ').
 class EmailAddressParser
   
+  attr_accessor email_string, email_array
   
+  def initialize(email_addresses)
+    @email_array = []
+    @email_string = email_addresses
+  end
+  
+  def parse
+    @email_array = @email_string.split(",")
+  end
   
 end
