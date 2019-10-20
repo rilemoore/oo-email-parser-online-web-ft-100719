@@ -12,7 +12,7 @@ class EmailAddressParser
   end
   
   def parse
-    @email_array = @email_string.gsub()(/[,] /)
+    @email_array = @email_string.gsub(/,/)(/[,] /)
   end
   
 end
