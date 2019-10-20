@@ -13,7 +13,7 @@ class EmailAddressParser
   
   def parse
     @email_array = @email_string.gsub(/,/, '').split(" ")
-    
+    @email_array.uniq
   end
   
   
